@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email App</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: sans-serif;
+				color: black;
+				font-size: 24px;
+				height: 100vh;
+				text-align: center;
+				font-weight: bold;
+
+				display: grid;
+				grid-template-columns: 80px 400px 1fr 300px;
+				grid-template-rows: 80px 1fr;
+			}
+			nav,
+			section,
+			main,
+			aside {
+				padding: 24px;
+			}
+			nav {
+				background-color: gray;
+				color: white;
+
+				grid-row: 1/-1;
+			}
+			menu {
+				background-color: blueviolet;
+				grid-column: 2/-1;
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				padding: 0 40px;
+			}
+			button:last-child {
+				background-color: red;
+				margin-left: auto;
+			}
+			aside {
+				background-color: rgb(236, 231, 231);
+			}
+			section {
+				background-color: rgb(236, 231, 231);
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+
+				overflow: scroll;
+			}
+			button {
+				display: inline-block;
+				font-size: 16px;
+				background-color: rgb(99, 24, 169);
+				border: none;
+				cursor: pointer;
+				color: white;
+				padding: 8px 12px;
+			}
+			.email {
+				background-color: rgb(160, 156, 156);
+				height: 96px;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <a href="index.html">Home</a> -->
+		<nav>Nav</nav>
+		<menu>
+			<button>New</button>
+			<button>Reply</button>
+			<button>Mark as unread</button>
+			<button>Forward</button>
+			<button>Trash</button>
+		</menu>
+		<section>
+			<div class="email">Email 1</div>
+			<div class="email">Email 2</div>
+			<div class="email">Email 3</div>
+			<div class="email">Email 4</div>
+			<div class="email">Email 5</div>
+			<div class="email">Email 6</div>
+			<div class="email">Email 7</div>
+			<div class="email">Email 8</div>
+			<div class="email">Email 9</div>
+			<div class="email">Email 10</div>
+		</section>
+		<main>Email view</main>
+		<aside>Additional Info</aside>
+	</body>
+</html>
